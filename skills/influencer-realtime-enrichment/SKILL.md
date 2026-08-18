@@ -46,6 +46,9 @@ Fetch fresh creator and content data when snapshot data is not enough for curren
 |---|---|---|---|
 | 实时挖掘-页面信息 | `facebook_page_info` | `GET /api/v1/facebook/realtime/page/info` | `query.page_url` |
 | 实时挖掘-帖子详情 | `facebook_post_detail` | `GET /api/v1/facebook/realtime/post/detail` | `query.post_url` |
+| 任务-关键词搜索帖子 | `facebook_task_post_search` | `GET /api/v1/facebook/task/post/search` | `query.query` |
+| 任务-页面帖子 | `facebook_task_page_posts` | `GET /api/v1/facebook/task/page/posts` | `query.page_url` |
+| 任务-查询结果 | `facebook_task_result` | `GET /api/v1/facebook/task/result` | `query.task_id` |
 
 ## Quick Start
 
