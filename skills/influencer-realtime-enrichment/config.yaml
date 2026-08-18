@@ -1,0 +1,12 @@
+name: influencer-realtime-enrichment
+version: 1.0.0
+description: Realtime creator/content enrichment across TikTok, Instagram, and YouTube. Fetch freshness-critical profile/media/video details, latest content, and delta checks during active campaigns.
+category: research
+requires_api_key: false
+triggers:
+  - realtime enrichment
+  - latest creator data
+  - fresh profile
+  - latest videos
+  - creator update
+  - realtime creator info

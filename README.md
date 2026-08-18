@@ -8,6 +8,9 @@ Agent Skills for influencer-marketing operations across **TikTok, Instagram, and
 |---|---|
 | `influencer-lead-discovery` | Search creators/content, expand similar creators, enrich profiles, produce outreach-ready lead lists |
 | `influencer-audience-fit-scoring` | Evaluate audience geography/language/age/gender/interests/**follower authenticity**, compare creators, score fit |
+| `influencer-realtime-enrichment` | Fetch freshness-critical profile/media/video details and latest content during active campaigns |
+| `influencer-campaign-monitoring` | Create/list/refresh/stop monitor tasks, pull metrics, download tracked assets, post-campaign review |
+| `influencer-commerce-intel` | TikTok Shop monetization signals — sale/goods/live/video-ad data, product details, commerce potential |
 
 ## Install
 
