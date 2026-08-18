@@ -1,0 +1,26 @@
+{
+  "name": "influencer-skills",
+  "owner": {
+    "name": "chengyu-xixihaha",
+    "url": "https://github.com/chengyu-xixihaha"
+  },
+  "metadata": {
+    "description": "Influencer-marketing skills across TikTok, Instagram, and YouTube: discovery, audience-fit scoring, realtime enrichment, campaign monitoring, and commerce intelligence. Zero-config free tier.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "influencer-skills",
+      "description": "Unified influencer skill set (TikTok/Instagram/YouTube) with a zero-config free tier.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/influencer-lead-discovery",
+        "./skills/influencer-audience-fit-scoring",
+        "./skills/influencer-realtime-enrichment",
+        "./skills/influencer-campaign-monitoring",
+        "./skills/influencer-commerce-intel"
+      ]
+    }
+  ]
+}
