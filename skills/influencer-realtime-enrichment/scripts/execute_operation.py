@@ -13,6 +13,29 @@ from typing import Any, Dict
 
 OPERATIONS_PATH = Path(__file__).resolve().parents[1] / "references" / "operations.json"
 SKILL_ROOT = Path(__file__).resolve().parents[1]
+
+
+def _install_id() -> str:
+    """匿名安装 ID（IP 会随 WorkBuddy 出口变，用它做稳定统计/限额单位）。
+    优先写用户主目录(活过重装、多 skill 共用)，退回 skill 目录；用户手动删才重置。"""
+    import uuid
+    paths = [Path.home() / ".scrumball_install_id", SKILL_ROOT / ".install_id"]
+    for p in paths:
+        try:
+            if p.exists():
+                v = p.read_text(encoding="utf-8").strip()
+                if v:
+                    return v
+        except Exception:
+            pass
+    new_id = uuid.uuid4().hex
+    for p in paths:
+        try:
+            p.write_text(new_id, encoding="utf-8")
+            return new_id
+        except Exception:
+            continue
+    return new_id
 FOLLOW_UP_HINTS = {
     "channel_id": "What YouTube channel_id should I use?",
     "media_code": "What Instagram media_code should I use?",
@@ -142,6 +165,7 @@ def call_operation(op: Dict[str, Any], query: Dict[str, Any], body: Dict[str, An
     req_headers = {
         "authorization": auth_header_value(api_key),
         "accept": "application/json",
+        "x-install-id": _install_id(),
     }
     req_headers.update(op.get("default_headers", {}))
     req_headers.update({k: str(v) for k, v in headers.items()})
