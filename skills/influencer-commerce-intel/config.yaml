@@ -1,6 +1,6 @@
 name: influencer-commerce-intel
-version: 1.0.0
-description: Commerce intelligence for creator-led selling, primarily TikTok Shop — sale/goods/live/video-ad monetization signals, product detail checks, and creator commerce-potential comparison.
+version: 1.0.1
+description: TikTok Shop product selection and creator commerce intelligence: sales and GMV data, goods/live/video-ad monetization signals, product details, creator commerce potential. Product research, TikTok e-commerce.
 category: research
 requires_api_key: false
 triggers:

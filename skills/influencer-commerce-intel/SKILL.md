@@ -1,6 +1,6 @@
 ---
 name: influencer-commerce-intel
-description: Commerce-focused intelligence for creator-led selling, primarily TikTok Shop. Use when users need sale/goods/live/video-ad monetization signals, product detail checks, or creator commerce potential comparison with operation-level API mapping.
+description: TikTok Shop product selection and creator commerce intelligence: sales and GMV data, goods/live/video-ad monetization signals, product details, creator commerce potential. Product research, TikTok e-commerce.
 ---
 
 # Influencer Commerce Intel

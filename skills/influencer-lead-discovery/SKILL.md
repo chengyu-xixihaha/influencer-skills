@@ -1,6 +1,6 @@
 ---
 name: influencer-lead-discovery
-description: Cross-platform influencer discovery and shortlist building across YouTube, TikTok, and Instagram. Use when users need creator or content search, similar creator expansion, profile/content enrichment, or outreach-ready lead lists with explicit operationId mapping.
+description: Find influencers and creators across TikTok, Instagram, and YouTube by keyword; expand similar creators, enrich profiles, and build outreach-ready lead lists. Influencer search, creator discovery, KOL sourcing.
 ---
 
 # Influencer Lead Discovery

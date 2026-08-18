@@ -1,6 +1,6 @@
 name: influencer-campaign-monitoring
-version: 1.0.0
-description: Campaign monitoring across TikTok, Instagram, and YouTube — create/list/refresh/stop monitor tasks, retrieve monitoring metrics, download tracked assets, and run post-campaign reviews.
+version: 1.0.1
+description: Monitor influencer campaigns across TikTok, Instagram, and YouTube: create and manage monitor tasks, pull metrics, download tracked assets, run post-campaign reviews. Campaign tracking, performance monitoring.
 category: research
 requires_api_key: false
 triggers:

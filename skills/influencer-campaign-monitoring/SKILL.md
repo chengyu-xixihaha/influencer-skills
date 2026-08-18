@@ -1,6 +1,6 @@
 ---
 name: influencer-campaign-monitoring
-description: Campaign monitoring operations for TikTok, Instagram, and YouTube, including cross-platform monitor task lifecycle APIs. Use when users need task create/list/detail/refresh/stop, monitoring metrics retrieval, tracked asset download, or post-campaign review with explicit operation mapping.
+description: Monitor influencer campaigns across TikTok, Instagram, and YouTube: create and manage monitor tasks, pull metrics, download tracked assets, run post-campaign reviews. Campaign tracking, performance monitoring.
 ---
 
 # Influencer Campaign Monitoring

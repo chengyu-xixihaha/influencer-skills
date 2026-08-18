@@ -1,6 +1,6 @@
 ---
 name: influencer-audience-fit-scoring
-description: Audience-fit analysis for pre-campaign decisions across YouTube, TikTok, and Instagram. Use when users evaluate audience geography/language/age/gender/interests/behavior/authenticity/rating tiers, compare creators, or justify selection with score breakdowns and mapped operationIds.
+description: Pre-campaign audience quality and follower authenticity (fake-follower detection) analysis across TikTok, Instagram, and YouTube: geography, language, age, gender, interests; compare creators. Audience analysis, fake followers, creator vetting.
 ---
 
 # Influencer Audience Fit Scoring

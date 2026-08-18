@@ -1,6 +1,6 @@
 ---
 name: influencer-realtime-enrichment
-description: Realtime creator/content enrichment across TikTok, Instagram, and YouTube. Now also covers Facebook (pages/posts). Use when users need freshness-critical profile/media/video details, latest content retrieval, or delta checks during active campaigns with explicit operationId mapping.
+description: Fetch fresh, on-demand creator data across TikTok, Instagram, Facebook, and YouTube: page/profile info, latest videos, posts, and media details. Realtime creator data, profile lookup, content details.
 ---
 
 # Influencer Realtime Enrichment
