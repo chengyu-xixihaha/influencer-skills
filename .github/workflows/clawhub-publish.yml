@@ -1,0 +1,41 @@
+name: Publish to ClawHub
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+  workflow_dispatch: {}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Login to ClawHub
+        run: npx --yes clawhub@latest login --token "$CLAWHUB_TOKEN"
+        env:
+          CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
+
+      - name: Publish skills (version from each config.yaml; already-published versions are skipped)
+        run: |
+          set +e
+          pub() {
+            slug="$1"; name="$2"; tags="$3"
+            ver=$(awk '/^version:/{print $2}' "skills/$slug/config.yaml")
+            echo "::group::publish $slug@$ver"
+            npx --yes clawhub@latest skill publish "./skills/$slug" \
+              --slug "$slug" --name "$name" --version "$ver" --tags "$tags"
+            echo "::endgroup::"
+          }
+          pub influencer-lead-discovery "TikTok/Instagram/YouTube Influencer Discovery" "influencer,creator,tiktok,instagram,youtube,kol,discovery,marketing"
+          pub influencer-audience-fit-scoring "Influencer Audience & Follower Authenticity" "influencer,audience,follower-authenticity,fake-followers,tiktok,instagram,youtube"
+          pub influencer-realtime-enrichment "Realtime Creator Data (TikTok/IG/FB/YouTube)" "influencer,creator,realtime,tiktok,instagram,facebook,youtube,profile"
+          pub influencer-campaign-monitoring "Influencer Campaign Monitoring (TikTok/IG/YouTube)" "influencer,campaign,monitoring,tracking,tiktok,instagram,youtube"
+          pub influencer-commerce-intel "TikTok Shop Commerce Intelligence" "influencer,commerce,tiktok-shop,ecommerce,product,gmv,marketing"
+          # 已发布版本会报错，忽略即可（只有版本号变了才真发）
+          exit 0
