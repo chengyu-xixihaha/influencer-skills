@@ -145,5 +145,35 @@
     "required_path": [],
     "required_body": [],
     "default_headers": {}
+  },
+  "facebook_page_info": {
+    "method": "GET",
+    "path": "/api/v1/facebook/realtime/page/info",
+    "summary": "实时挖掘-页面信息",
+    "tags": [
+      "facebook"
+    ],
+    "required_query": [
+      "page_url"
+    ],
+    "required_any_query": [],
+    "required_path": [],
+    "required_body": [],
+    "default_headers": {}
+  },
+  "facebook_post_detail": {
+    "method": "GET",
+    "path": "/api/v1/facebook/realtime/post/detail",
+    "summary": "实时挖掘-帖子详情",
+    "tags": [
+      "facebook"
+    ],
+    "required_query": [
+      "post_url"
+    ],
+    "required_any_query": [],
+    "required_path": [],
+    "required_body": [],
+    "default_headers": {}
   }
 }

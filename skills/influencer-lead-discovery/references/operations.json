@@ -323,5 +323,50 @@
     "required_path": [],
     "required_body": [],
     "default_headers": {}
+  },
+  "facebook_task_post_search": {
+    "method": "GET",
+    "path": "/api/v1/facebook/task/post/search",
+    "summary": "任务-关键词搜索帖子",
+    "tags": [
+      "facebook"
+    ],
+    "required_query": [
+      "query"
+    ],
+    "required_any_query": [],
+    "required_path": [],
+    "required_body": [],
+    "default_headers": {}
+  },
+  "facebook_task_page_posts": {
+    "method": "GET",
+    "path": "/api/v1/facebook/task/page/posts",
+    "summary": "任务-页面帖子",
+    "tags": [
+      "facebook"
+    ],
+    "required_query": [
+      "page_url"
+    ],
+    "required_any_query": [],
+    "required_path": [],
+    "required_body": [],
+    "default_headers": {}
+  },
+  "facebook_task_result": {
+    "method": "GET",
+    "path": "/api/v1/facebook/task/result",
+    "summary": "任务-查询结果",
+    "tags": [
+      "facebook"
+    ],
+    "required_query": [
+      "task_id"
+    ],
+    "required_any_query": [],
+    "required_path": [],
+    "required_body": [],
+    "default_headers": {}
   }
 }

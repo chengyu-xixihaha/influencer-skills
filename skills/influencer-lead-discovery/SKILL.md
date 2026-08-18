@@ -1,6 +1,6 @@
 ---
 name: influencer-lead-discovery
-description: Cross-platform influencer discovery and shortlist building across YouTube, TikTok, and Instagram. Use when users need creator or content search, similar creator expansion, profile/content enrichment, or outreach-ready lead lists with explicit operationId mapping.
+description: Cross-platform influencer discovery and shortlist building across YouTube, TikTok, and Instagram. Now also covers Facebook (pages/posts). Use when users need creator or content search, similar creator expansion, profile/content enrichment, or outreach-ready lead lists with explicit operationId mapping.
 ---
 
 # Influencer Lead Discovery
@@ -51,6 +51,14 @@ Build decision-ready creator shortlists across TikTok, Instagram, and YouTube wi
 |---|---|---|---|
 | ping | `ping` | `GET /api/ping` | `none` |
 | 搜索联想 | `search_instagram_suggest` | `POST /api/v1/search/suggest` | `query.platform, query.query` |
+
+### Facebook
+
+| Capability | operationId | Interface | Minimum input |
+|---|---|---|---|
+| 任务-关键词搜索帖子 | `facebook_task_post_search` | `GET /api/v1/facebook/task/post/search` | `query.query` |
+| 任务-页面帖子 | `facebook_task_page_posts` | `GET /api/v1/facebook/task/page/posts` | `query.page_url` |
+| 任务-查询结果 | `facebook_task_result` | `GET /api/v1/facebook/task/result` | `query.task_id` |
 
 ## Quick Start
 
